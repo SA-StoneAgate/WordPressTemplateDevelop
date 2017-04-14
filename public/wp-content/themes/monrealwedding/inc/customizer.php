@@ -290,6 +290,61 @@ $wp_customize->add_control(
 			'section'	=> 'slider_section',
 			'setting'	=> 'slide_link3'
 	));	
+  
+  // Slide Image 4
+	$wp_customize->add_setting('slide_image4',array(
+			'default'	=> get_template_directory_uri().'/images/slides/slider4.jpg',
+			'sanitize_callback'	=> 'esc_url_raw'
+	));
+	
+	$wp_customize->add_control( new WP_Customize_Image_Control(	$wp_customize,'slide_image4', array(
+				'label'	=> __('Slide Image 4','monrealwedding'),
+				'section'	=> 'slider_section',
+				'setting'	=> 'slide_image4'				
+		))
+	);	
+	$wp_customize->add_setting('slide_title4',array(
+			'default'	=> __('Misha and Masha','monrealwedding'),
+			'sanitize_callback'	=> 'sanitize_text_field'
+	));
+	$wp_customize->add_control('slide_title4', array(		
+			'label'	=> __('Slide title 4','monrealwedding'),
+			'section'	=> 'slider_section',
+			'setting'	=> 'slide_title4'			
+	));	
+	$wp_customize->add_setting('slide_desc4',array(
+			'default'	=> __('We inviting you and your family on 25 December 2015','monrealwedding'),
+			'sanitize_callback'	=> 'wptexturize'
+	));
+	
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'slide_desc4',
+			array(
+				'label'          => __( 'Slider description 4','monrealwedding' ),
+				'section'        => 'slider_section',
+				'settings'       => 'slide_desc4',
+				'type'           => 'textarea',
+			)
+		)
+	);		
+	
+	$wp_customize->add_setting('slide_link4',array(
+			'default'	=> '#',
+			'sanitize_callback'	=> 'esc_url_raw'
+	));
+	
+	$wp_customize->add_control('slide_link4',array(
+			'label'	=> __('Slide link 4','monrealwedding'),
+			'section'	=> 'slider_section',
+			'setting'	=> 'slide_link4'
+	));	
+  
+  /**
+   * Конец слайдера на 4 фото
+   */
+  
 	$wp_customize->add_section('social_sec',array(
 			'title'	=> __('Social Settings','monrealwedding'),
  			'description' => sprintf( __( 'Add social icons link here.<br />More icon available in %s.', 'monrealwedding' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.MONREALWEDDING_PRO_THEME_URL.'"' ), __( 'PRO Version', 'monrealwedding' )

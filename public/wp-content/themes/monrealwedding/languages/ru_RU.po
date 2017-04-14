@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MonrealWedding\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-13 16:05+0000\n"
-"PO-Revision-Date: 2017-04-13 16:08+0000\n"
+"POT-Creation-Date: 2017-04-14 07:04+0000\n"
+"PO-Revision-Date: 2017-04-14 07:05+0000\n"
 "Last-Translator: Petros R. Melikyan <stoneagat@rambler.ru>\n"
 "Language-Team: Russian\n"
 "Language: ru-RU\n"
@@ -14,13 +14,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: footer.php:29
-msgid "by"
-msgstr "от"
-
-#: footer.php:29
-msgid "StoneAgate Themes"
-msgstr "StoneAgate Темы"
+#: header.php:83 inc/customizer.php:160 inc/customizer.php:209
+#: inc/customizer.php:257
+msgid "Misha and Masha"
+msgstr "Миша и Маша"
 
 #: 404.php:14
 msgid "404 Not Found"
@@ -128,6 +125,14 @@ msgstr "Продолжить чтение <span class=\"meta-nav\">&rarr;</span>
 msgid "Theme %1$s %2$s"
 msgstr "Тема %1$s %2$s"
 
+#: footer.php:29
+msgid "by"
+msgstr "от"
+
+#: footer.php:29
+msgid "StoneAgate Themes"
+msgstr "StoneAgate Темы"
+
 #: functions.php:46
 msgid "Primary Menu"
 msgstr "Основное меню"
@@ -156,11 +161,6 @@ msgstr "on"
 #: header.php:31
 msgid "Menu"
 msgstr "Меню"
-
-#: header.php:83 inc/customizer.php:160 inc/customizer.php:209
-#: inc/customizer.php:257
-msgid "Nick and Sarah"
-msgstr "Ник и Сара"
 
 #: header.php:85 inc/customizer.php:169 inc/customizer.php:218
 #: inc/customizer.php:266

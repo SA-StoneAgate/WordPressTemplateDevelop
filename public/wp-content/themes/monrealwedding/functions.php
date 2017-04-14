@@ -5,7 +5,7 @@
  *
  * @package MonrealWedding
  */
-// Set the word limit of post content 
+// Установите ограничение на количество слов в сообщении 
 function monrealwedding_content($limit) {
   $content = explode(' ', get_the_content(), $limit);
   if (count($content) >= $limit) {
@@ -22,16 +22,19 @@ function monrealwedding_content($limit) {
 }
 
 /**
- * Set the content width based on the theme's design and stylesheet.
+ * Установите ширину контента, основанную на дизайне и стилях темы.
  */
 if (!function_exists('monrealwedding_setup')) :
 
   /**
-   * Sets up theme defaults and registers support for various WordPress features.
+   * Устанавливает параметры по умолчанию для тем и поддерживает регистры 
+   * для различных функций WordPress.
    *
-   * Note that this function is hooked into the after_setup_theme hook, which runs
-   * before the init hook. The init hook is too late for some features, such as indicating
-   * support post thumbnails.
+   * Обратите внимание, что эта функция подключена к хуку after_setup_theme, 
+   * который выполняется перед вызовом init hook. Init hook инициализирует
+   * слишком поздно для некоторых функций, такие как 
+   * отображение значков вспомогательной почты.
+   * 
    */
   function monrealwedding_setup() {
     if (!isset($content_width))
@@ -69,23 +72,25 @@ function monrealwedding_widgets_init() {
 }
 
 add_action('widgets_init', 'monrealwedding_widgets_init');
+
 /*
- * Use this function for Sets up theme defaults blog sidebar.
+ * Используйте эту функцию для настройки боковой панели блога по умолчанию.
  */
 
 function monrealwedding_font_url() {
   $font_url = '';
 
-  /* Translators: If there are any character that are not
-   * supported by Oswald, trsnalate this to off, do not
-   * translate into your own language.
+  /*
+   * Переводчики: Если есть какие-либо символы, 
+   * которые не поддерживаются Освальдом, 
+   * отключите это, не переводите на свой язык.
    */
   $roboto_condensed = _x('on', 'roboto_condensed:on or off', 'monrealwedding');
   $greatvibes = _x('on', 'greatvibes:on or off', 'monrealwedding');
 
-  /* Translators: If there has any character that are not supported 
-   *  by Scada, translate this to off, do not translate
-   *  into your own language.
+  /* Переводчики: Если у вас есть какой-либо символ, 
+   * который не поддерживается Scada, 
+   * отключите его, не переводите на свой язык.
    */
 
   if ('off' !== $roboto_condensed || 'off' !== $greatvibes) {
@@ -132,7 +137,7 @@ function monrealwedding_scripts() {
 add_action('wp_enqueue_scripts', 'monrealwedding_scripts');
 
 function monrealwedding_pagination() {
-  /* Set this function for pagination links */
+  /* Установите эту функцию для ссылок разбивки на страницы */
   global $wp_query;
   $big = 12345678;
   $page_format = paginate_links(array(
@@ -160,32 +165,32 @@ define('MONREALWEDDING_PRO_THEME_URL', 'htpp://stoneagate.ru/wordpres-themes/');
 define('MONREALWEDDING_THEME_FEATURED_SET_VIDEO_URL', 'https://www.youtube.com/watch?v=310YGYtGLIM');
 
 /**
- * Implement the Custom Header feature.
+ * Внедрение функции пользовательского заголовка.
  */
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
- * Custom template tags for this theme.
+ * Пользовательские теги шаблонов для этой темы.
  */
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * Custom functions that act independently of the theme templates.
+ * Пользовательские функции, которые действуют независимо от шаблонов тем.
  */
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Customizer additions.
+ * Добавления модификатора.
  */
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Load Jetpack compatibility file.
+ * Загрузите файл совместимости Jetpack.
  */
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Set this fuction for blog pagination
+ * Установите эту функцию для постраничной публикации блога
  */
 function monrealwedding_custom_blogpost_pagination($wp_query) {
   $big = 999999999; // need an unlikely integer
@@ -218,17 +223,18 @@ function monrealwedding_custom_blogpost_pagination($wp_query) {
   }
 }
 
-// get slug by id
+/**
+ * Получить slug по id
+ */
 function monrealwedding_get_slug_by_id($id) {
   $post_data = get_post($id, ARRAY_A);
   $slug = $post_data['post_name'];
   return $slug;
 }
 
-/*
+/**
  * Вставляю favicon.ico
  */
-
 function monrealwedding_favicon() {
   echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_template_directory_uri() . '/images/favicons/animated_favicon1.gif ">';
   echo '<link rel="icon" type="image/gif" href="' . get_template_directory_uri() . '/images/favicons/animated_favicon1.gif ">';
@@ -236,10 +242,9 @@ function monrealwedding_favicon() {
 
 add_action('wp_head', 'monrealwedding_favicon');
 
-/*
+/**
  * Меняю логотип при входе и/или регистрации
  */
-
 function monrealwedding_login_logo() {
   echo '
    <style type="text/css">
@@ -247,10 +252,9 @@ function monrealwedding_login_logo() {
     </style>';
 }
 
-/*
+/**
  * удаляет сообщение о новой версии WordPress у всех пользователей кроме администратора
  */
-
 if (is_admin() && !current_user_can('manage_options')) {
   add_action('init', function() {
     remove_action('init', 'wp_version_check');

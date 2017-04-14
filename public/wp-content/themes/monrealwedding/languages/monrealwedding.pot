@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-13 16:05+0000\n"
+"POT-Creation-Date: 2017-04-14 07:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: header.php:83 inc/customizer.php:160 inc/customizer.php:209
 #: inc/customizer.php:257
-msgid "Nick and Sarah"
+msgid "Misha and Masha"
 msgstr ""
 
 #: header.php:85 inc/customizer.php:169 inc/customizer.php:218
