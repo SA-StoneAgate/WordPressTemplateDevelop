@@ -80,7 +80,7 @@
                     <div id="slidecaption<?php echo $sln; ?>" class="nivo-html-caption">
                     <div class="slide_info">
                     <h2> 
-                    <a href="<?php echo esc_url(get_theme_mod('slide_link'.$sln,'#link'.$sln)); ?>"><?php echo esc_attr(get_theme_mod('slide_title'.$sln, __('Nick and Sarah','monrealwedding'))); ?></a>
+                    <a href="<?php echo esc_url(get_theme_mod('slide_link'.$sln,'#link'.$sln)); ?>"><?php echo esc_attr(get_theme_mod('slide_title'.$sln, __('Misha and Masha','monrealwedding'))); ?></a>
                     </h2>
                     <p><?php  echo esc_attr(get_theme_mod('slide_desc'.$sln, __('We inviting you and your family on 25 December 2015','monrealwedding'))); ?></p>
                     <?php if( get_theme_mod('slide_link'.$sln, '#link') ) { ?>

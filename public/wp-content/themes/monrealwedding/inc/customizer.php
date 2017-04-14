@@ -157,7 +157,7 @@ $wp_customize->add_control(
      	 )
 	);	
 	$wp_customize->add_setting('slide_title1',array(
-			'default'	=> __('Nick and Sarah','monrealwedding'),
+			'default'	=> __('Misha and Masha','monrealwedding'),
 			'sanitize_callback' => 'sanitize_text_field',
 	));
 	$wp_customize->add_control( 'slide_title1', array(	
@@ -206,7 +206,7 @@ $wp_customize->add_control(
 		)
 	);	
 	$wp_customize->add_setting('slide_title2',array(
-			'default'	=> __('Nick and Sarah','monrealwedding'),
+			'default'	=> __('Misha and Masha','monrealwedding'),
 			'sanitize_callback' => 'sanitize_text_field',
 	));
 	$wp_customize->add_control( 'slide_title2', array(	
@@ -254,7 +254,7 @@ $wp_customize->add_control(
 		))
 	);	
 	$wp_customize->add_setting('slide_title3',array(
-			'default'	=> __('Nick and Sarah','monrealwedding'),
+			'default'	=> __('Misha and Masha','monrealwedding'),
 			'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	$wp_customize->add_control('slide_title3', array(		
