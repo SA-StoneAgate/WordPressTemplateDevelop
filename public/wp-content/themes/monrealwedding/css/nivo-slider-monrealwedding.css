@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.04.2017, 7:50:19
+    Author     : StoneAgate
+*/
+
+.slide_info h2 {
+  font:600 52px/50px 'Good Vibes Pro', cursive !important; 
+  color:#fff; margin:0 0 20px 0; 
+  text-shadow:1px 3px 2px #000;
+}
+.slide_info p { 
+  font:600 44px/55px 'Good Vibes Pro', sans-serif !important; 
+  margin-bottom:25px; 
+  text-shadow:1px 1px 1px #000;
+}
+.slide_info h2 a {
+  color:#ffffff; 
+}
+.ReadMore {
+  font:400 24px/24px 'Good Vibes Pro', sans-serif !important; 
+  padding:10px 25px; 
+  background-color:#e7598b; 
+  color: #fff; 
+  border-radius:3px; 
+  -moz-border-radius:3px; 
+  -webkit-border-radius:3px; 
+  text-shadow:1px 3px 2px #000; 
+  display:inline-block;
+}
+.ReadMore:hover {
+  background-color:#c34370; 
+  color: #fff; 
+}

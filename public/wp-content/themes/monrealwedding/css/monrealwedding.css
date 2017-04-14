@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.04.2017, 6:37:17
+    Author     : StoneAgate
+*/
+
+/* Подгрузка своих шрифтов к клиенту */
+@font-face {
+  font-family: Good Vibes Pro;
+  src: url(../fonts/Good-Vibes-Pro.ttf);
+}
+
+body {
+  background-image: url(../images/MonrealWedding_Background.png);
+}
+
+
+.section_title {
+  font: 400 52px/52px 'Good Vibes Pro', cursive !important; 
+  background:url(images/section-title-bg.png) no-repeat center bottom; 
+  padding-bottom:40px; 
+  margin-bottom:35px; 
+  text-align:center;
+}
+
+
+
+.header .header-inner .logo h1 {
+  font-weight:400; 
+  margin:0px; 
+  line-height:36px; 
+  font-family: 'Good Vibes Pro', cursive !important; 
+  color:#c34370;
+}
