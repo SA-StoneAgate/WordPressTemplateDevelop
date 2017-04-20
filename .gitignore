@@ -16,4 +16,6 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+/DB_Backups
 /nbproject/private/
+/public/wp-content/themes/savoiceserver/inc/wp_bootstrap_navwalker_OLD.php
