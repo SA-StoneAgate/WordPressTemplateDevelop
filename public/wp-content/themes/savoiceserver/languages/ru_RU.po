@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2017-04-20 12:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-04-20 15:45+0000\n"
+"Last-Translator: Petros R. Melikyan <stoneagat@rambler.ru>\n"
+"Language-Team: Russian\n"
+"Language: ru-RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: functions.php:48
+msgid "Primary"
+msgstr "Primary"
+
+#: functions.php:96
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: functions.php:98
+msgid "Add widgets here."
+msgstr "Добавить виджеты"
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска по запросу: %s"
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Перейти к содержимому"
+
+#: header.php:44
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ой! Страница не найдена."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Похоже, в этом месте ничего не найдено. Может быть, попробуйте одну из "
+"ссылок ниже или поиск?"
+
+#: 404.php:33
+msgid "Most Used Categories"
+msgstr "Самые популярные категории"
+
+#. translators: %1$s: smiley
+#: 404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Попробуйте посмотреть в ежемесячных архивах. %1$s"
+
+#: footer.php:20
+#, php-format
+msgid "&copy; Copyright: %s"
+msgstr "&copy; Авторские права: %s"
+
+#: footer.php:22
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Тема: %1$s от %2$s."
+
+#: footer.php:24
+#, php-format
+msgid "Website promotion: %2$s."
+msgstr "Продвижение сайта: %2$s."
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Один комментарий к &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s комментария к &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s комментарий к &ldquo;%2$s&rdquo;"
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Старые комментарии"
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Новые комментарии"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Комментарии закрыты"
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Отправлено %s"
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "от %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Опубликовано в %1$s"
+
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: inc/template-tags.php:65
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Оставить комментарий<span class=\"screen-reader-text\"> для %s</span>"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:72 template-parts/content-page.php:34
+#, php-format
+msgid "Edit %s"
+msgstr "Редактировать %s"
+
+#: template-parts/content-page.php:22 template-parts/content.php:38
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начать здесь</a>."
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"К сожалению, ничего не найдено. Пожалуйста, попытайтесь снова с другими "
+"ключевыми словами."
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Похоже, мы не можем найти то, что Вы ищете. Возможно, поиск может помочь."
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:33
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Читать дальше %s <span class=\"meta-nav\">&rarr;</span>"
+
+#. Name of the theme
+msgid "SAVoiceServer"
+msgstr "SAVoiceServer"
+
+#. Description of the theme
+msgid ""
+"SAVoiceServer is a multi-purpose WordPress theme with a pure adaptive design "
+"based on the Bootstrap structure. SAVoiceServer has a professional interface,"
+" suitable for gaming community sites (which was originally intended for this "
+"topic), corporate website and portfolio."
+msgstr ""
+"SAVoiceServer — это многоцелевая тема WordPress с чистым адаптивным дизайном,"
+" основанным на структуре Bootstrap. SAVoiceServer обладает профессиональным "
+"интерфейсом, подходящим для сайтов игровых сообществ (для чего и "
+"задумывалась изначально эта тема), корпоративного веб-сайта и портфолио."
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me/"
+
+#. Author of the theme
+msgid "StoneAgate | Petros R. Melikyan"
+msgstr "StoneAgate | Petros R. Melikyan"
+
+#. Author URI of the theme
+msgid "https://vk.com/stoneagate"
+msgstr "https://vk.com/stoneagate"
