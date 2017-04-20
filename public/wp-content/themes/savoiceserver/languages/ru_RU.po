@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2017-04-20 12:58+0000\n"
+"POT-Creation-Date: 2017-04-20 16:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-04-20 15:45+0000\n"
+"PO-Revision-Date: 2017-04-20 16:08+0000\n"
 "Last-Translator: Petros R. Melikyan <stoneagat@rambler.ru>\n"
 "Language-Team: Russian\n"
 "Language: ru-RU\n"
@@ -14,30 +14,9 @@ msgstr ""
 "n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: functions.php:48
-msgid "Primary"
-msgstr "Primary"
-
-#: functions.php:96
-msgid "Sidebar"
-msgstr "Боковая панель"
-
-#: functions.php:98
-msgid "Add widgets here."
-msgstr "Добавить виджеты"
-
-#: search.php:19
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Результаты поиска по запросу: %s"
-
-#: header.php:24
-msgid "Skip to content"
-msgstr "Перейти к содержимому"
-
-#: header.php:44
-msgid "Primary Menu"
-msgstr "Primary Menu"
+#: header.php:78
+msgid "Search"
+msgstr "Поиск"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
@@ -60,21 +39,6 @@ msgstr "Самые популярные категории"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Попробуйте посмотреть в ежемесячных архивах. %1$s"
-
-#: footer.php:20
-#, php-format
-msgid "&copy; Copyright: %s"
-msgstr "&copy; Авторские права: %s"
-
-#: footer.php:22
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr "Тема: %1$s от %2$s."
-
-#: footer.php:24
-#, php-format
-msgid "Website promotion: %2$s."
-msgstr "Продвижение сайта: %2$s."
 
 #: comments.php:31
 #, php-format
@@ -100,6 +64,46 @@ msgstr "Новые комментарии"
 #: comments.php:78
 msgid "Comments are closed."
 msgstr "Комментарии закрыты"
+
+#: footer.php:21
+#, php-format
+msgid "&copy; Copyright: %s"
+msgstr "&copy; Авторские права: %s"
+
+#: footer.php:23
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Тема: %1$s от %2$s."
+
+#: footer.php:25
+#, php-format
+msgid "Website promotion: %2$s."
+msgstr "Продвижение сайта: %2$s."
+
+#: functions.php:48
+msgid "Primary"
+msgstr "Primary"
+
+#: functions.php:96
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: functions.php:98
+msgid "Add widgets here."
+msgstr "Добавить виджеты"
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Перейти к содержимому"
+
+#: header.php:44
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска по запросу: %s"
 
 #: inc/template-tags.php:28
 #, php-format
@@ -139,10 +143,6 @@ msgstr "Оставить комментарий<span class=\"screen-reader-text\
 msgid "Edit %s"
 msgstr "Редактировать %s"
 
-#: template-parts/content-page.php:22 template-parts/content.php:38
-msgid "Pages:"
-msgstr "Страницы:"
-
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
@@ -168,6 +168,10 @@ msgid ""
 "searching can help."
 msgstr ""
 "Похоже, мы не можем найти то, что Вы ищете. Возможно, поиск может помочь."
+
+#: template-parts/content-page.php:22 template-parts/content.php:38
+msgid "Pages:"
+msgstr "Страницы:"
 
 #. translators: %s: Name of current post.
 #: template-parts/content.php:33
