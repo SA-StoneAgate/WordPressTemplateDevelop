@@ -110,18 +110,24 @@ add_action('widgets_init', 'savoiceserver_widgets_init');
  */
 function savoiceserver_scripts() {
   wp_enqueue_style('savoiceserver-style', get_stylesheet_uri(), array(), '1.0.0');
+  wp_enqueue_style('sav-custom-style', get_template_directory_uri() . '/css/sav-custom-style.css', array(), '1.0.0');
   wp_enqueue_style('bootstrap-min-css', get_template_directory_uri() . '/assets/bootstrap-3.3.7/css/bootstrap.min.css', array(), '3.3.7');
   wp_enqueue_style('font-awesome-min', get_template_directory_uri() . '/assets/font-awesome-4.7.0/css/font-awesome.min.css', array(), '4.7.0');
 
+  wp_enqueue_style('jquery-fancybox-min-css', get_template_directory_uri() . '/assets/fancybox-3.0/dist/jquery.fancybox.min.css', array(), '3.0');
+
   if (!is_admin()) {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri() . '/assets/jQuery-1.12.4/jquery-1.12.4.min.js', false, '1.12.4', true);
+//    wp_register_script('jquery', get_template_directory_uri() . '/assets/jQuery-1.12.4/jquery-1.12.4.min.js', false, '1.12.4', true);
+    wp_register_script('jquery', get_template_directory_uri() . '/assets/jQuery-3.2.1/jquery-3.2.1.min.js', false, '3.2.1', true);
     wp_enqueue_script('jquery');
   }
 
   wp_enqueue_script('bootstrap-min-js', get_template_directory_uri() . '/assets/bootstrap-3.3.7/js/bootstrap.min.js', array(), '3.3.7', true);
   wp_enqueue_script('savoiceserver-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
   wp_enqueue_script('savoiceserver-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
+  wp_enqueue_script('jquery-fancybox-min-js', get_template_directory_uri() . '/assets/fancybox-3.0/dist/jquery.fancybox.min.js', array(), '3.0', true);
+  wp_enqueue_script('flowtype-js', get_template_directory_uri().'/assets/FlowType.JS/flowtype.js',array(),'1.1',true);
 
   if (is_singular() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');

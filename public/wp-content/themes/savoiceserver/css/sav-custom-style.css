@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20.04.2017, 21:31:55
+    Author     : StoneAgate
+*/
+
+/* Подгрузка своих шрифтов к клиенту */
+@font-face {
+  font-family: Country Western;
+  src: url(../fonts/Country-Western.ttf);
+}
+@font-face {
+  font-family: Country Western Script;
+  src: url(../fonts/Country-Western-Script.ttf);
+}
+
+/*----- Шапка сайта и Логотип -----*/
+.my-logo-box {
+  height: 0;
+  min-height: 100px !important;
+  padding-bottom: 10.5%;
+  background: rgb(0,6,28); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(0,6,28,1) 0%, rgba(14,35,61,1) 53%, rgba(32,62,142,1) 67%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,6,28,1) 0%,rgba(14,35,61,1) 53%,rgba(32,62,142,1) 67%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,6,28,1) 0%,rgba(14,35,61,1) 53%,rgba(32,62,142,1) 67%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00061c', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+}
+.my-logo {
+  height: 0;
+  min-height: 100px !important;
+  min-width: 350px !important;
+  padding-bottom: 10%;
+  background-image: url("../images/1-SAVoiceserver-LOGO.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-branding {
+  position: static;
+}
+.site-title {
+  text-align: right;
+  font-family: Country Western;
+  font-size: 2em;
+  color: #FFFFFF; 
+}
+.site-title a, a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.site-title a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+} 
+/*-----Конец - Шапка сайта и Логотип -----*/
+
+.welcome-SAV {
+  font-family: Country Western;
+  font-size: 32px;
+  text-align: center;
+}
+.welcome-SAV-script {
+  font-family: Country Western Script;
+  font-size: 32px;
+  text-align: center;
+}
+
+
+body {
+  background-image: url(../images/Body_Background.png);
+  background-position: top center;
+  font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif !important;
+}
+
+.container-fluid {
+
+}
+
+.container {
+
+}
+
+/*----- Подвал сайта -----*/
+.site-footer{
+  height: 150px;
+  background: rgb(0,6,28); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(0,6,28,1) 0%, rgba(14,35,61,1) 0%, rgba(32,62,142,1) 21%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,6,28,1) 0%,rgba(14,35,61,1) 0%,rgba(32,62,142,1) 21%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,6,28,1) 0%,rgba(14,35,61,1) 0%,rgba(32,62,142,1) 21%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00061c', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.site-info{
+  font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+  font-size: medium;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  color: #FFFFFF;
+}
+/*----- Конец - Подвал сайта -----*/
